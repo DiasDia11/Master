@@ -1,27 +1,34 @@
+// components
+import ManageData from './Components/ManageData';
+import ListRender from './Components/ListRender';
+import ConditionalRender from './Components/ConditionalRender';
+
+// styles / css
 import './App.css';
 
+import Octocat from './assets/Octocat.png';
+import ShowUserName from './Components/ShowUserName';
+import { useState } from 'react';
+
+
+
 function App() {
+  const name = "Eduardo";
+  const [userName] = useState("Maria");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <h1>Avançando no React!</h1>
+      {/* Imagem em asset 
+      <div>
+        <img src={Octocat} alt="gato" />
+      </div>
+      
+      <ManageData/>
+      <ListRender />
+      <ConditionalRender/>
+      */}
+      <ShowUserName name={userName} />
     </div>
   );
 }
