@@ -16,6 +16,7 @@ import './App.css';
 import Octocat from './assets/Octocat.png';
 import MyComponent from './ComponentsCSS/MyComponent';
 import Title from './ComponentsCSS/Title';
+import MyForms from './components/MyForms';
 
 
 
@@ -42,15 +43,22 @@ function App() {
   }
   */}
 
-  const n = 15;
+  {/* const n = 15;
   const [name] = useState("Matheus");
 
   const redTitle = true;
+  */}
+
+
+
+
+
+
 
   return (
     <div className="App">
-      
-      
+      <h2>Forms</h2>
+      <MyForms  user={{name: "Josias", email: "Josias@Gmail.com", bio: "Sou um advogado", role: "admin"}}/>
       
       
       
